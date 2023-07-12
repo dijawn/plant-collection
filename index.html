@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Collection</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="top">
+        <button type="button">Add Plant</button>
+    </div>
+
+    <div class="bottom">
+        <h1>My Greenhouse</h1>
+        <div class="gh-wrapper">
+
+        </div>
+    </div>
+
+    <div class="modal">
+        <span class="material-symbols-outlined close x">close</span>
+        <h1>Enter Plant Details</h1>
+        <form action="/" method="GET">
+            <div class="plant-attribute name">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Common Name" required />
+            </div>
+            <div class="plant-attribute latinName">
+                <label for="latinName"></label>
+                <input type="text" id="latinName" name="latinName" placeholder= "Botanical Name" required />
+            </div>
+            <div class="plant-attribute humidity">
+                <label for="humidity">Humidity</label>
+                <select id="humidity" name="humidity" placeholder= "Humidity Level" required>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+            </div>
+            <div class="plant-attribute light">
+                <label for="light">Lighting</label>
+                <select id="light" name="light" value="Light Level" required>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn close">Close</button>
+            </div>
+        </form>
+    </div>
+    <div class="display-mode-toggle">
+        <div class="toggle-bg">
+            <div class="toggle-btn"></div>
+        </div>
+        <div class="text">
+            <span class="">I want one!</span>
+            <span class="hide-text">I own one!</span>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
